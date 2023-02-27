@@ -32,5 +32,5 @@ app.post('/generate-pitches', async (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log(`App listening at https://productpitchgenerator.netlify.app/`);
+	console.log(`App listening at http://localhost:${port}`);
 });
