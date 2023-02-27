@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Product Pitch Generator</title>
-  <link rel="stylesheet" href="style.css">
+	<title>Product Pitch Generator</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
-  <h1>Product Pitch Generator</h1>
-  <form id="pitch-form">
-    <label for="persona">Ideal Customer Persona:</label>
-    <input type="text" id="persona" name="persona" required><br>
-
-    <label for="action">Desired Action:</label>
-    <input type="text" id="action" name="action" required><br>
-
-    <label for="description">Product Description:</label>
-    <input type="text" id="description" name="description" required><br>
-
-    <button type="submit">Generate Pitches</button>
-  </form>
-  
-  <div id="pitch-container"></div>
-
-  <script src="app.js"></script>
+	<div class="container">
+		<h1 class="title">Product Pitch Generator</h1>
+		<form id="pitch-form">
+			<div class="form-group">
+				<label for="persona">Ideal Customer Persona:</label>
+				<input type="text" id="persona" name="persona" required>
+			</div>
+			<div class="form-group">
+				<label for="action">Desired Action:</label>
+				<input type="text" id="action" name="action" required>
+			</div>
+			<div class="form-group">
+				<label for="description">Product Description:</label>
+				<input type="text" id="description" name="description" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Generate Pitches</button>
+		</form>
+		<div id="pitch-container"></div>
+	</div>
 </body>
 </html>
